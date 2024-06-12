@@ -1,7 +1,7 @@
 import { useState ,useEffect} from 'react'
 import {useDispatch} from 'react-redux'
 import authservice from './appwrite/auth';
-import {login,logout} from './store/authSclice'
+import {login,logout} from './store/authSlice'
 import {Header,Footer} from './components/index'
 
 function App() {
