@@ -6,8 +6,12 @@ import Container from "./container/Container";
 import RTE from "./RTE";
 import Signup from "./Signup"
 import Login from "./Login"
-import PostForm from "../components/postForm/PostForm"
-
+import PostForm from '../components/postForm/PostForm';
+import Button from '../components/Button'
+import Input from '../components/Input'
+import Select from '../components/Select'
+import PostCard from '../components/PostCard'
+import AuthLayout from '../components/AuthLayout'
 export{
     Header,
     Footer,
@@ -17,5 +21,10 @@ export{
     RTE,
     Signup,
     Login,
-    PostForm
+    PostForm,
+    Button,
+    Input,
+    Select,
+    PostCard,
+    AuthLayout
 }
