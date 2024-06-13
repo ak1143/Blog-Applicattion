@@ -1,8 +1,9 @@
-import { useState ,useEffect} from 'react'
+import React,{ useState ,useEffect} from 'react'
 import {useDispatch} from 'react-redux'
-import authservice from './appwrite/auth';
+import authService from './appwrite/auth';
 import {login,logout} from './store/authSlice'
 import {Header,Footer} from './components/index'
+import { Outlet } from 'react-router-dom';
 
 function App() {
   
@@ -10,7 +11,7 @@ function App() {
   const dispatch=useDispatch();
 
   useEffect(()=>{
-    authservice.getcurrentUser()
+    authService.getCurrentUser()
     .then((userData)=>{
       if(userData){
         dispatch(login({userData}))
@@ -28,7 +29,7 @@ function App() {
       <div className='w-full block'>
         <Header />
         <main>
-          {/* <Outlet /> */}
+          <Outlet />
         </main>
         <Footer />
       </div>

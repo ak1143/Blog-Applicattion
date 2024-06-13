@@ -1,7 +1,7 @@
 import React from "react";
 
 function Button({
-    childern,
+    children,
     type='button',
     bgColour='bg-blue-600',
     textColour='text-white',
@@ -10,9 +10,10 @@ function Button({
 }){
     return (
         <button className={`px-4 py2 rounded-lg ${className} ${bgColour} ${textColour} `} {...props}>
-            {childern}
+            {children}
         </button>
     )
 }
 
 export default Button
+
