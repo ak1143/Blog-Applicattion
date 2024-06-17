@@ -1,6 +1,6 @@
 import React from "react"
 import {Editor} from"@tinymce/tinymce-react"
-import {Controller, useController} from "react-hook-form"
+import {Controller} from "react-hook-form"
 
 // the control is given by the useController.
 // control- the control is given to the component which calls this function.

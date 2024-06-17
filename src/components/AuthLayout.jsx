@@ -10,7 +10,7 @@ export default function Protected({children,authentication = true}){
     // the authentication is comming from the user 
     const navigate = useNavigate();
     const [loader,setLoader] = useState(true);
-    const authStatus = useSelector(state => state.auth.status);
+    const authStatus = useSelector((state) => state.auth.status);
 
     useEffect(()=>{
         // Todo:make it more easy

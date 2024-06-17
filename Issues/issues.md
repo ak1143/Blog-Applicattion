@@ -61,4 +61,15 @@ async getPost(slug){
 ```
 
 
+## Issue 3: error in PostForm
+
+```javascript
+// error:-
+const userData = useSelector(state => state.state.userData);
+
+// corrected:-
+const userData = useSelector((state) => state.auth?.userData);
+
+```
+
 

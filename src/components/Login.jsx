@@ -19,7 +19,7 @@ function Login(){
             const session=await authservice.login(data);
 
             if(session){
-                const useData=await authservice.getcurrentUser();
+                const useData=await authservice.getCurrentUser();
                 if(useData) dispatch(authLogin(useData));
                 navigate("/");
             }

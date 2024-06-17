@@ -7,8 +7,8 @@ import { Outlet } from 'react-router-dom';
 
 function App() {
   
-  const[loading,setLoading]=useState(true);
-  const dispatch=useDispatch();
+  const[loading,setLoading]= useState(true)
+  const dispatch = useDispatch()
 
   useEffect(()=>{
     authService.getCurrentUser()
