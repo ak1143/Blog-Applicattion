@@ -51,11 +51,10 @@ function PostForm({ post }){
                     const dbPost = await authservice
                     .createPost({
                         ...data, 
-                        userId : userData.$id
+                        userId : userData?.$id
                     });
 
-                    if(dbPost) navigate(`/post/${dbPost.$id}`);
-
+                    if(dbPost) navigate(`/post/${dbPost.$id}`);     
                 }
             }
         }
